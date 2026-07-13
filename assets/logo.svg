@@ -4,16 +4,16 @@
       <stop offset="0" stop-color="#67e8f9"/><stop offset="1" stop-color="#38bdf8"/>
     </linearGradient>
     <linearGradient id="gB" x1="0" y1="1" x2="1" y2="0">
-      <stop offset="0" stop-color="#38bdf8"/><stop offset="1" stop-color="#818cf8"/>
+      <stop offset="0" stop-color="#38bdf8"/><stop offset="1" stop-color="#60a5fa"/>
     </linearGradient>
     <linearGradient id="gC" x1="0" y1="1" x2="1" y2="0">
-      <stop offset="0" stop-color="#818cf8"/><stop offset="1" stop-color="#c084fc"/>
+      <stop offset="0" stop-color="#60a5fa"/><stop offset="1" stop-color="#818cf8"/>
     </linearGradient>
     <linearGradient id="gD" x1="0" y1="1" x2="1" y2="0">
-      <stop offset="0" stop-color="#c084fc"/><stop offset="1" stop-color="#f472b6"/>
+      <stop offset="0" stop-color="#818cf8"/><stop offset="1" stop-color="#a5b4fc"/>
     </linearGradient>
     <linearGradient id="gLine" x1="0" y1="0" x2="1" y2="0">
-      <stop offset="0" stop-color="#67e8f9"/><stop offset="0.55" stop-color="#a78bfa"/><stop offset="1" stop-color="#f472b6"/>
+      <stop offset="0" stop-color="#67e8f9"/><stop offset="0.55" stop-color="#60a5fa"/><stop offset="1" stop-color="#a5b4fc"/>
     </linearGradient>
     <filter id="glow" x="-40%" y="-40%" width="180%" height="180%">
       <feGaussianBlur stdDeviation="3.4" result="b"/>
@@ -21,8 +21,8 @@
     </filter>
   </defs>
   <!-- dark rounded tile -->
-  <rect x="4" y="4" width="112" height="112" rx="26" fill="#0b1020"/>
-  <rect x="4" y="4" width="112" height="112" rx="26" fill="none" stroke="#223" stroke-width="1.5"/>
+  <rect x="4" y="4" width="112" height="112" rx="26" fill="#0a1120"/>
+  <rect x="4" y="4" width="112" height="112" rx="26" fill="none" stroke="#1e2c4a" stroke-width="1.5"/>
   <!-- ascending productivity bars -->
   <g opacity="0.92">
     <rect x="24" y="66" width="14" height="26" rx="5" fill="url(#gA)"/>
@@ -34,6 +34,6 @@
   <g filter="url(#glow)">
     <polyline points="24,74 49,62 67,46 92,30" fill="none" stroke="url(#gLine)"
               stroke-width="4.5" stroke-linecap="round" stroke-linejoin="round"/>
-    <circle cx="92" cy="30" r="5.5" fill="#f9a8d4"/>
+    <circle cx="92" cy="30" r="5.5" fill="#bfdbfe"/>
   </g>
 </svg>
