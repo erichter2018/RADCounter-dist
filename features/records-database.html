@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex, nofollow">
+<title>Local Records Database — RADCounter docs</title>
+<link rel="stylesheet" href="../assets/site.css">
+<link rel="icon" href="../assets/favicon.svg" type="image/svg+xml">
+
+</head>
+<body>
+<header class="topbar">
+  <a class="brand" href="../index.html"><img src="../assets/logo.svg" alt="">RADCounter<span class="brand-docs">docs</span></a>
+  <nav class="mainnav">
+    <a href="../index.html">Home</a>
+    <a href="../az.html">A–Z</a>
+    <a href="../workflow.html">Workflow</a>
+    <a href="../surfaces.html">By Type</a>
+    <div class="nav-cats">
+      <button class="nav-cats-btn">Categories ▾</button>
+      <div class="nav-cats-menu">
+        <a href="../category/tracking.html">📈 RVU &amp; TBWU Tracking</a>
+        <a href="../category/clario.html">🔬 Clario Work-Unit Compare</a>
+        <a href="../category/capture.html">🛰️ Study Capture</a>
+        <a href="../category/stats.html">📊 Statistics &amp; Charts</a>
+        <a href="../category/shift.html">🗓️ Shifts &amp; Records</a>
+        <a href="../category/platform.html">⚙️ Setup &amp; Platform</a>
+      </div>
+    </div>
+    <a class="nav-external" href="https://erichter2018.github.io/MosaicTools-dist/" target="_blank" rel="noopener" title="MosaicTools — the companion Mosaic workflow toolkit">MosaicTools <span class="ext-arrow">↗</span></a>
+  </nav>
+  <div class="searchbox">
+    <input id="search" type="search" placeholder="Search features…  ( / )" autocomplete="off">
+    <div id="search-results" hidden></div>
+  </div>
+</header>
+<main>
+
+<article class="feature">
+  <div class="feature-head">
+    <div class="crumbs"><a href="../index.html">Home</a> › <a href="../category/shift.html">Shifts &amp; Records</a></div>
+    <h1>Local Records Database</h1>
+    <p class="brief">Every study and shift is stored in a local SQLite database on your machine — the source for all statistics.</p>
+  </div>
+  <div class="feature-cols">
+    <div class="feature-body">
+      
+      <h2>What it does</h2>
+<p>RADCounter keeps a local SQLite database of every shift and every study within it — procedure, work units, timestamps, patient class, and more. It&#39;s the single source the live counters and the Statistics window read from.</p>
+<h2>Using it</h2>
+<p>The database lives with the app&#39;s data and updates continuously as you read. You don&#39;t manage it directly; features like Statistics, Study Mix, and Reconcile all sit on top of it.</p>
+<h2>Tips &amp; gotchas</h2>
+<ul>
+<li>It&#39;s <strong>local</strong> — your productivity history never leaves your machine unless you turn on [[cloud-backup]].</li>
+<li>Study identity is stored as a hashed accession, never the raw one — see [[accession-privacy]].</li>
+</ul>
+
+    </div>
+    <aside class="feature-meta">
+      <h4>At a glance</h4>
+      <div class="meta-row"><span class="meta-k">Category</span><span class="meta-v"><a href="../category/shift.html">🗓️ Shifts &amp; Records</a></span></div>
+    <div class="meta-row"><span class="meta-k">Stage</span><span class="meta-v">Always on</span></div>
+      <h4>Related</h4><ul class="rel-list"><li><a href="../features/shifts.html">Shifts &amp; Auto-Resume</a></li><li><a href="../features/statistics.html">Statistics &amp; Charts</a></li><li><a href="../features/accession-privacy.html">Private Accession Handling</a></li><li><a href="../features/cloud-backup.html">Cloud Backup</a></li></ul>
+    </aside>
+  </div>
+</article>
+</main>
+<footer class="footer">
+  <div>Documents <strong>RADCounter v5.1.0</strong> · built 2026-07-13</div>
+  <div class="footer-quiet">Internal tooling documentation. No patient data appears anywhere on this site.</div>
+</footer>
+<script>window.__REL = "../";</script>
+<script src="../assets/minisearch.min.js"></script>
+<script src="../assets/search-data.js"></script>
+<script src="../assets/features-lite.js"></script>
+<script src="../assets/site.js"></script>
+</body>
+</html>

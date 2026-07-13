@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex, nofollow">
+<title>CDP Setup — RADCounter docs</title>
+<link rel="stylesheet" href="../assets/site.css">
+<link rel="icon" href="../assets/favicon.svg" type="image/svg+xml">
+
+</head>
+<body>
+<header class="topbar">
+  <a class="brand" href="../index.html"><img src="../assets/logo.svg" alt="">RADCounter<span class="brand-docs">docs</span></a>
+  <nav class="mainnav">
+    <a href="../index.html">Home</a>
+    <a href="../az.html">A–Z</a>
+    <a href="../workflow.html">Workflow</a>
+    <a href="../surfaces.html">By Type</a>
+    <div class="nav-cats">
+      <button class="nav-cats-btn">Categories ▾</button>
+      <div class="nav-cats-menu">
+        <a href="../category/tracking.html">📈 RVU &amp; TBWU Tracking</a>
+        <a href="../category/clario.html">🔬 Clario Work-Unit Compare</a>
+        <a href="../category/capture.html">🛰️ Study Capture</a>
+        <a href="../category/stats.html">📊 Statistics &amp; Charts</a>
+        <a href="../category/shift.html">🗓️ Shifts &amp; Records</a>
+        <a href="../category/platform.html">⚙️ Setup &amp; Platform</a>
+      </div>
+    </div>
+    <a class="nav-external" href="https://erichter2018.github.io/MosaicTools-dist/" target="_blank" rel="noopener" title="MosaicTools — the companion Mosaic workflow toolkit">MosaicTools <span class="ext-arrow">↗</span></a>
+  </nav>
+  <div class="searchbox">
+    <input id="search" type="search" placeholder="Search features…  ( / )" autocomplete="off">
+    <div id="search-results" hidden></div>
+  </div>
+</header>
+<main>
+
+<article class="feature">
+  <div class="feature-head">
+    <div class="crumbs"><a href="../index.html">Home</a> › <a href="../category/platform.html">Setup &amp; Platform</a></div>
+    <h1>CDP Setup</h1>
+    <p class="brief">One-click provisioning that sets up the Clario and Mosaic CDP connections RADCounter uses to read work units and the current study.</p>
+  </div>
+  <div class="feature-cols">
+    <div class="feature-body">
+      
+      <h2>What it does</h2>
+<p>The <strong>CDP</strong> tab gets RADCounter&#39;s direct connections to Clario and Mosaic running. Each has an enable toggle, a one-click <strong>Set up</strong> button that provisions the connection, and a live status readout.</p>
+<h2>How to turn it on / set it up</h2>
+<ol>
+<li>Open <strong>Settings → CDP</strong>.</li>
+<li>For Clario: check <strong>Enable Clario CDP (work-unit comparison)</strong>, click <strong>Set up Clario CDP</strong>, then launch Clario from the shortcut it creates.</li>
+<li>For Mosaic (optional fallback): check <strong>Enable Mosaic CDP reader</strong>, click <strong>Set up Mosaic CDP</strong>, and restart Mosaic once.</li>
+<li>Watch the status lines — and the bottom-bar lights — go green.</li>
+</ol>
+<h2>Using it</h2>
+<p>Setup is a one-time step per machine. After that, RADCounter reconnects on its own each session. Both readers are off by default, so nothing changes until you opt in.</p>
+<h2>Tips &amp; gotchas</h2>
+<ul>
+<li>The Clario reader powers [[clario-wu-compare]], [[clario-signed-time]], and [[patient-class]]; the Mosaic reader is the MosaicTools-down fallback ([[mosaic-cdp]]).</li>
+<li>Connection health is always visible in the [[liveness-lights]] at the bottom of the window.</li>
+</ul>
+
+    </div>
+    <aside class="feature-meta">
+      <h4>At a glance</h4>
+      <div class="meta-row"><span class="meta-k">Category</span><span class="meta-v"><a href="../category/platform.html">⚙️ Setup &amp; Platform</a></span></div>
+    <div class="meta-row"><span class="meta-k">Stage</span><span class="meta-v">Set up</span></div>
+    <div class="meta-row"><span class="meta-k">Since</span><span class="meta-v">v5.1.0</span></div>
+      <h4>Related</h4><ul class="rel-list"><li><a href="../features/clario-cdp.html">Clario CDP Reader</a></li><li><a href="../features/mosaic-cdp.html">Mosaic CDP Reader</a></li><li><a href="../features/liveness-lights.html">Integration Status Lights</a></li></ul>
+    </aside>
+  </div>
+</article>
+</main>
+<footer class="footer">
+  <div>Documents <strong>RADCounter v5.1.0</strong> · built 2026-07-13</div>
+  <div class="footer-quiet">Internal tooling documentation. No patient data appears anywhere on this site.</div>
+</footer>
+<script>window.__REL = "../";</script>
+<script src="../assets/minisearch.min.js"></script>
+<script src="../assets/search-data.js"></script>
+<script src="../assets/features-lite.js"></script>
+<script src="../assets/site.js"></script>
+</body>
+</html>

@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex, nofollow">
+<title>RADCounter — Documentation</title>
+<link rel="stylesheet" href="assets/site.css">
+<link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+
+</head>
+<body>
+<header class="topbar">
+  <a class="brand" href="index.html"><img src="assets/logo.svg" alt="">RADCounter<span class="brand-docs">docs</span></a>
+  <nav class="mainnav">
+    <a href="index.html" class="active">Home</a>
+    <a href="az.html">A–Z</a>
+    <a href="workflow.html">Workflow</a>
+    <a href="surfaces.html">By Type</a>
+    <div class="nav-cats">
+      <button class="nav-cats-btn">Categories ▾</button>
+      <div class="nav-cats-menu">
+        <a href="category/tracking.html">📈 RVU &amp; TBWU Tracking</a>
+        <a href="category/clario.html">🔬 Clario Work-Unit Compare</a>
+        <a href="category/capture.html">🛰️ Study Capture</a>
+        <a href="category/stats.html">📊 Statistics &amp; Charts</a>
+        <a href="category/shift.html">🗓️ Shifts &amp; Records</a>
+        <a href="category/platform.html">⚙️ Setup &amp; Platform</a>
+      </div>
+    </div>
+    <a class="nav-external" href="https://erichter2018.github.io/MosaicTools-dist/" target="_blank" rel="noopener" title="MosaicTools — the companion Mosaic workflow toolkit">MosaicTools <span class="ext-arrow">↗</span></a>
+  </nav>
+  <div class="searchbox">
+    <input id="search" type="search" placeholder="Search features…  ( / )" autocomplete="off">
+    <div id="search-results" hidden></div>
+  </div>
+</header>
+<main>
+
+<section class="hero">
+  <div class="aurora"><i></i><i></i><i></i></div>
+  <img class="hero-logo" src="assets/logo.svg" alt="RADCounter logo">
+  <h1>RADCounter</h1>
+  <p class="tagline">Real-time RVU &amp; TBWU tracking for the radiology reading room</p>
+  <p class="pitch">RADCounter is a lightweight desktop companion that counts your work as you read it — live RVU and TBWU totals, per-hour pace against a goal, projected end-of-shift income, and a full statistics view of your shifts. It identifies each study straight from Mosaic and Clario, compares its own work units against Clario's, and keeps a private local record of every shift. One small exe, no installer, auto-updating.</p>
+  <div class="hero-search"><input id="hero-search" type="search" placeholder="Search every feature…" autocomplete="off"><div id="hero-search-results" hidden></div></div>
+</section>
+
+  <section class="module">
+    <h2>✨ New in v5.1.0</h2>
+    <div class="spotlight">
+      
+      <div class="spot-ver spot-newest">
+        <div class="spot-head"><span class="spot-vnum">v5.1.0</span><span class="spot-title">Clario Compare &amp; CDP</span></div>
+        <ul><li>Clario work-unit comparison: each study now shows RADCounter's TBWU with Clario's own per-study number underneath, so you can see where they agree and where they don't. Display-and-compare only — it never changes your…</li><li>New &quot;Clario Compare&quot; statistics view: a compensation delta priced with your TBWU on both sides (isolating the timestamp effect), work-unit totals, a drafted / not-drafted split, and a list of study types that diverge …</li><li>RADCounter can now read the current study straight from Mosaic when the MosaicTools bridge is down (opt-in Mosaic CDP reader).</li><li>The bottom status bar is now three at-a-glance liveness lights — Clario CDP, Mosaic CDP, and MosaicTools — green when live, red when down.</li><li>Recent Studies redesigned: procedure and your TBWU on top, then &quot;X ago, Ym Zs read duration&quot; with Clario's number below.</li><li>Fix: completed studies no longer land as patient class &quot;Unknown&quot; — the last-known-good class is held and back-filled if it arrives late.</li><li>Fix: discarded studies aren't counted, and a signed study no longer jumps into Recent Studies before you've actually signed it.</li></ul>
+      </div>
+      <div class="spot-ver">
+        <div class="spot-head"><span class="spot-vnum">v5.0.21</span><span class="spot-title">Instant Recent Studies &amp; Study Mix</span></div>
+        <ul><li>Recent Studies updates the instant a study is signed instead of waiting for the next scan.</li><li>Studies complete on the sign action itself for more accurate end-of-study timestamps.</li><li>New Study Mix view breaks your shift down by modality and study type.</li></ul>
+      </div>
+      <div class="spot-ver">
+        <div class="spot-head"><span class="spot-vnum">v5.0.20</span><span class="spot-title">Reconcile fix &amp; current-rate income</span></div>
+        <ul><li>Payroll reconcile no longer creates overlapping or multi-day shifts.</li><li>Month income is projected at your current rate schedule rather than trailing history.</li></ul>
+      </div>
+    </div>
+  </section>
+<section class="module">
+  <h2>🎲 Feature of the day</h2>
+  <div id="fotd" class="fotd"></div>
+</section>
+<section class="module">
+  <h2>Browse by function</h2>
+  <div class="catgrid">
+    <a class="catcard" href="category/tracking.html"><div class="catcard-icon">📈</div><h3>RVU &amp; TBWU Tracking</h3><p>The live counters: RVU and TBWU totals, per-hour rate, pace against a goal, projected income, and the pace car.</p><span class="catcard-n">6 features</span></a>
+    <a class="catcard" href="category/clario.html"><div class="catcard-icon">🔬</div><h3>Clario Work-Unit Compare</h3><p>Reading Clario's own per-study work unit and comparing it, study by study, against RADCounter's computed TBWU.</p><span class="catcard-n">3 features</span></a>
+    <a class="catcard" href="category/capture.html"><div class="catcard-icon">🛰️</div><h3>Study Capture</h3><p>How RADCounter knows what you're reading — the MosaicTools bridge, the Mosaic and Clario CDP readers, and UI automation.</p><span class="catcard-n">5 features</span></a>
+    <a class="catcard" href="category/stats.html"><div class="catcard-icon">📊</div><h3>Statistics &amp; Charts</h3><p>The Statistics window: view modes, charts, study mix, and the Clario comparison tab.</p><span class="catcard-n">2 features</span></a>
+    <a class="catcard" href="category/shift.html"><div class="catcard-icon">🗓️</div><h3>Shifts &amp; Records</h3><p>Shift detection, the local records database, payroll reconcile, and the private accession handling.</p><span class="catcard-n">4 features</span></a>
+    <a class="catcard" href="category/platform.html"><div class="catcard-icon">⚙️</div><h3>Setup &amp; Platform</h3><p>CDP setup, the liveness lights, auto-update, cloud backup, and themes.</p><span class="catcard-n">5 features</span></a>
+  </div>
+</section>
+<section class="module">
+  <h2>Or browse another way</h2>
+  <div class="axisrow">
+    <a class="axischip" href="az.html">🔤 Alphabetical A–Z</a>
+    <a class="axischip" href="workflow.html">🕐 By workflow stage</a>
+    <a class="axischip" href="surfaces.html">🖱️ By Type (action, setting, popup, or automatic)</a>
+  </div>
+</section>
+</main>
+<footer class="footer">
+  <div>Documents <strong>RADCounter v5.1.0</strong> · built 2026-07-13</div>
+  <div class="footer-quiet">Internal tooling documentation. No patient data appears anywhere on this site.</div>
+</footer>
+<script>window.__REL = "";</script>
+<script src="assets/minisearch.min.js"></script>
+<script src="assets/search-data.js"></script>
+<script src="assets/features-lite.js"></script>
+<script src="assets/site.js"></script>
+</body>
+</html>

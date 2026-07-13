@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex, nofollow">
+<title>Patient-Class Accuracy — RADCounter docs</title>
+<link rel="stylesheet" href="../assets/site.css">
+<link rel="icon" href="../assets/favicon.svg" type="image/svg+xml">
+
+</head>
+<body>
+<header class="topbar">
+  <a class="brand" href="../index.html"><img src="../assets/logo.svg" alt="">RADCounter<span class="brand-docs">docs</span></a>
+  <nav class="mainnav">
+    <a href="../index.html">Home</a>
+    <a href="../az.html">A–Z</a>
+    <a href="../workflow.html">Workflow</a>
+    <a href="../surfaces.html">By Type</a>
+    <div class="nav-cats">
+      <button class="nav-cats-btn">Categories ▾</button>
+      <div class="nav-cats-menu">
+        <a href="../category/tracking.html">📈 RVU &amp; TBWU Tracking</a>
+        <a href="../category/clario.html">🔬 Clario Work-Unit Compare</a>
+        <a href="../category/capture.html">🛰️ Study Capture</a>
+        <a href="../category/stats.html">📊 Statistics &amp; Charts</a>
+        <a href="../category/shift.html">🗓️ Shifts &amp; Records</a>
+        <a href="../category/platform.html">⚙️ Setup &amp; Platform</a>
+      </div>
+    </div>
+    <a class="nav-external" href="https://erichter2018.github.io/MosaicTools-dist/" target="_blank" rel="noopener" title="MosaicTools — the companion Mosaic workflow toolkit">MosaicTools <span class="ext-arrow">↗</span></a>
+  </nav>
+  <div class="searchbox">
+    <input id="search" type="search" placeholder="Search features…  ( / )" autocomplete="off">
+    <div id="search-results" hidden></div>
+  </div>
+</header>
+<main>
+
+<article class="feature">
+  <div class="feature-head">
+    <div class="crumbs"><a href="../index.html">Home</a> › <a href="../category/capture.html">Study Capture</a></div>
+    <h1>Patient-Class Accuracy</h1>
+    <p class="brief">Holds the last-known-good patient class for a study and back-fills it if it arrives late, so completed studies don't land as &quot;Unknown.&quot;</p>
+  </div>
+  <div class="feature-cols">
+    <div class="feature-body">
+      
+      <h2>What it does</h2>
+<p>Patient class — ER, inpatient, or outpatient — changes a study&#39;s work-unit adjustment, so getting it right matters. If a study finished before its class had been read from Clario, it could previously be recorded as <strong>Unknown</strong>. RADCounter now holds the last-known-good class for the study and <strong>back-fills it</strong> onto the record if it arrives moments later.</p>
+<h2>Using it</h2>
+<p>This happens automatically whenever Clario CDP is available. A record saved without a class is corrected in place once the class lands, so you don&#39;t end up with stray &quot;Unknown&quot; outpatients skewing a comparison.</p>
+<h2>Tips &amp; gotchas</h2>
+<ul>
+<li>Back-fill only ever fills an empty or Unknown class — it never overwrites a class that was already correctly recorded.</li>
+<li>If a study type shows up in [[clario-compare-view]] as differing, a class mismatch is the first thing to check.</li>
+</ul>
+
+    </div>
+    <aside class="feature-meta">
+      <h4>At a glance</h4>
+      <div class="meta-row"><span class="meta-k">Category</span><span class="meta-v"><a href="../category/capture.html">🛰️ Study Capture</a></span></div>
+    <div class="meta-row"><span class="meta-k">Stage</span><span class="meta-v">At sign-off</span></div>
+    <div class="meta-row"><span class="meta-k">Since</span><span class="meta-v">v5.1.0</span></div>
+      <h4>Related</h4><ul class="rel-list"><li><a href="../features/clario-cdp.html">Clario CDP Reader</a></li><li><a href="../features/live-tbwu.html">Live TBWU Tracking</a></li><li><a href="../features/clario-compare-view.html">Clario Compare View</a></li></ul>
+    </aside>
+  </div>
+</article>
+</main>
+<footer class="footer">
+  <div>Documents <strong>RADCounter v5.1.0</strong> · built 2026-07-13</div>
+  <div class="footer-quiet">Internal tooling documentation. No patient data appears anywhere on this site.</div>
+</footer>
+<script>window.__REL = "../";</script>
+<script src="../assets/minisearch.min.js"></script>
+<script src="../assets/search-data.js"></script>
+<script src="../assets/features-lite.js"></script>
+<script src="../assets/site.js"></script>
+</body>
+</html>

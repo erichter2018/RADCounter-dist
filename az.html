@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex, nofollow">
+<title>A–Z — MosaicTools docs</title>
+<link rel="stylesheet" href="assets/site.css">
+<link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+
+</head>
+<body>
+<header class="topbar">
+  <a class="brand" href="index.html"><img src="assets/logo.svg" alt="">RADCounter<span class="brand-docs">docs</span></a>
+  <nav class="mainnav">
+    <a href="index.html">Home</a>
+    <a href="az.html" class="active">A–Z</a>
+    <a href="workflow.html">Workflow</a>
+    <a href="surfaces.html">By Type</a>
+    <div class="nav-cats">
+      <button class="nav-cats-btn">Categories ▾</button>
+      <div class="nav-cats-menu">
+        <a href="category/tracking.html">📈 RVU &amp; TBWU Tracking</a>
+        <a href="category/clario.html">🔬 Clario Work-Unit Compare</a>
+        <a href="category/capture.html">🛰️ Study Capture</a>
+        <a href="category/stats.html">📊 Statistics &amp; Charts</a>
+        <a href="category/shift.html">🗓️ Shifts &amp; Records</a>
+        <a href="category/platform.html">⚙️ Setup &amp; Platform</a>
+      </div>
+    </div>
+    <a class="nav-external" href="https://erichter2018.github.io/MosaicTools-dist/" target="_blank" rel="noopener" title="MosaicTools — the companion Mosaic workflow toolkit">MosaicTools <span class="ext-arrow">↗</span></a>
+  </nav>
+  <div class="searchbox">
+    <input id="search" type="search" placeholder="Search features…  ( / )" autocomplete="off">
+    <div id="search-results" hidden></div>
+  </div>
+</header>
+<main>
+
+<h1 class="pagetitle">A–Z index</h1>
+<div class="letterbar"><a href="#l-A">A</a><a href="#l-C">C</a><a href="#l-I">I</a><a href="#l-L">L</a><a href="#l-M">M</a><a href="#l-O">O</a><a href="#l-P">P</a><a href="#l-R">R</a><a href="#l-S">S</a><a href="#l-T">T</a></div>
+<h2 class="letter" id="l-A">A</h2><div class="azlist"><a class="azrow" href="features/auto-update.html"><span class="az-name">Auto-Update</span><span class="az-brief">RADCounter checks for new versions on startup and updates itself in place — no installer.</span></a></div>
+<h2 class="letter" id="l-C">C</h2><div class="azlist"><a class="azrow" href="features/cdp-setup.html"><span class="az-name">CDP Setup</span><span class="az-brief">One-click provisioning that sets up the Clario and Mosaic CDP connections RADCounter uses to read work units and the current study.</span></a><a class="azrow" href="features/clario-cdp.html"><span class="az-name">Clario CDP Reader</span><span class="az-brief">The connection RADCounter uses to read Clario directly — the per-study work unit, patient class, and priority.</span></a><a class="azrow" href="features/clario-compare-view.html"><span class="az-name">Clario Compare View</span><span class="az-brief">A statistics view that pits your totals against Clario's over studies that have both — with a compensation delta, drafted split, and a list of study types that differ.</span></a><a class="azrow" href="features/clario-wu-compare.html"><span class="az-name">Clario Work-Unit Comparison</span><span class="az-brief">Each study shows RADCounter's TBWU in blue with Clario's own per-study work unit in white directly underneath.</span></a><a class="azrow" href="features/cloud-backup.html"><span class="az-name">Cloud Backup</span><span class="az-brief">Optionally back up your records to OneDrive or Dropbox so a shift's history survives a machine change.</span></a><a class="azrow" href="features/critical-results.html"><span class="az-name">Critical Results</span><span class="az-brief">Studies with a communicated critical result are flagged on the record, carried over from MosaicTools.</span></a></div>
+<h2 class="letter" id="l-I">I</h2><div class="azlist"><a class="azrow" href="features/liveness-lights.html"><span class="az-name">Integration Status Lights</span><span class="az-brief">The bottom status bar is three at-a-glance lights — Clario CDP, Mosaic CDP, MosaicTools — green when live, red when down.</span></a></div>
+<h2 class="letter" id="l-L">L</h2><div class="azlist"><a class="azrow" href="features/live-rvu.html"><span class="az-name">Live RVU Tracking</span><span class="az-brief">Your RVU total and per-hour rate, updating on the main bar the moment each study completes.</span></a><a class="azrow" href="features/live-tbwu.html"><span class="az-name">Live TBWU Tracking</span><span class="az-brief">The time-based work-unit total and rate — RADCounter's headline productivity metric — live on the main bar.</span></a><a class="azrow" href="features/records-database.html"><span class="az-name">Local Records Database</span><span class="az-brief">Every study and shift is stored in a local SQLite database on your machine — the source for all statistics.</span></a></div>
+<h2 class="letter" id="l-M">M</h2><div class="azlist"><a class="azrow" href="features/mosaic-cdp.html"><span class="az-name">Mosaic CDP Reader</span><span class="az-brief">Reads the current study straight from Mosaic when the MosaicTools bridge is down — a more reliable fallback than the accessibility tree.</span></a><a class="azrow" href="features/mosaictools-bridge.html"><span class="az-name">MosaicTools Bridge</span><span class="az-brief">RADCounter's primary link to what you're reading — a named-pipe connection to MosaicTools that reports the current study and sign/discard events.</span></a></div>
+<h2 class="letter" id="l-O">O</h2><div class="azlist"><a class="azrow" href="features/clario-signed-time.html"><span class="az-name">Official Signed Time</span><span class="az-brief">RADCounter records Clario's official signed date and time for each study, used to compare compensation against the exact rate hour.</span></a></div>
+<h2 class="letter" id="l-P">P</h2><div class="azlist"><a class="azrow" href="features/pace-car.html"><span class="az-name">Pace Car</span><span class="az-brief">A live &quot;+2.1 ahead / -1.4 behind&quot; readout telling you at a glance whether you're beating your pace.</span></a><a class="azrow" href="features/patient-class.html"><span class="az-name">Patient-Class Accuracy</span><span class="az-brief">Holds the last-known-good patient class for a study and back-fills it if it arrives late, so completed studies don't land as &quot;Unknown.&quot;</span></a><a class="azrow" href="features/payroll-reconcile.html"><span class="az-name">Payroll Reconcile</span><span class="az-brief">Straighten out shift boundaries after the fact so your history and totals line up with what you actually worked.</span></a><a class="azrow" href="features/accession-privacy.html"><span class="az-name">Private Accession Handling</span><span class="az-brief">Accessions are stored hashed, never raw, and patient information is kept in memory only — never written to disk.</span></a><a class="azrow" href="features/income-projection.html"><span class="az-name">Projected Income</span><span class="az-brief">Live and projected earnings for the shift, priced from your TBWU at the current rate schedule.</span></a></div>
+<h2 class="letter" id="l-R">R</h2><div class="azlist"><a class="azrow" href="features/recent-studies.html"><span class="az-name">Recent Studies</span><span class="az-brief">A running list of the studies you've just signed, each with its TBWU, how long ago it was, and read duration.</span></a><a class="azrow" href="features/rvu-per-study.html"><span class="az-name">RVU / Study</span><span class="az-brief">An optional readout of your average RVU per study — a quick read on case intensity.</span></a></div>
+<h2 class="letter" id="l-S">S</h2><div class="azlist"><a class="azrow" href="features/shifts.html"><span class="az-name">Shifts &amp; Auto-Resume</span><span class="az-brief">RADCounter groups your work into shifts and can resume the current one automatically when you relaunch.</span></a><a class="azrow" href="features/statistics.html"><span class="az-name">Statistics &amp; Charts</span><span class="az-brief">A statistics window with about a dozen view modes and charts — trends by hour, day, modality, and more — over any date range you pick.</span></a><a class="azrow" href="features/study-mix.html"><span class="az-name">Study Mix</span><span class="az-brief">Breaks a shift or date range down by modality and study type, so you can see the composition of what you read.</span></a></div>
+<h2 class="letter" id="l-T">T</h2><div class="azlist"><a class="azrow" href="features/themes.html"><span class="az-name">Themes</span><span class="az-brief">Twenty-plus color presets plus a custom theme, with dark and light options and an always-on-top mode.</span></a></div>
+</main>
+<footer class="footer">
+  <div>Documents <strong>RADCounter v5.1.0</strong> · built 2026-07-13</div>
+  <div class="footer-quiet">Internal tooling documentation. No patient data appears anywhere on this site.</div>
+</footer>
+<script>window.__REL = "";</script>
+<script src="assets/minisearch.min.js"></script>
+<script src="assets/search-data.js"></script>
+<script src="assets/features-lite.js"></script>
+<script src="assets/site.js"></script>
+</body>
+</html>
