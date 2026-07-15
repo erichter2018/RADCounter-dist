@@ -47,20 +47,20 @@
 </section>
 
   <section class="module">
-    <h2>✨ New in v5.1.0</h2>
+    <h2>✨ New in v5.1.4</h2>
     <div class="spotlight">
       
       <div class="spot-ver spot-newest">
-        <div class="spot-head"><span class="spot-vnum">v5.1.0</span><span class="spot-title">Clario Compare &amp; CDP</span></div>
-        <ul><li>Clario work-unit comparison: each study now shows RADCounter's TBWU with Clario's own per-study number underneath, so you can see where they agree and where they don't. Display-and-compare only — it never changes your…</li><li>New &quot;Clario Compare&quot; statistics view: a compensation delta priced with your TBWU on both sides (isolating the timestamp effect), work-unit totals, a drafted / not-drafted split, and a list of study types that diverge …</li><li>RADCounter can now read the current study straight from Mosaic when the MosaicTools bridge is down (opt-in Mosaic CDP reader).</li><li>The bottom status bar is now three at-a-glance liveness lights — Clario CDP, Mosaic CDP, and MosaicTools — green when live, red when down.</li><li>Recent Studies redesigned: procedure and your TBWU on top, then &quot;X ago, Ym Zs read duration&quot; with Clario's number below.</li><li>Fix: completed studies no longer land as patient class &quot;Unknown&quot; — the last-known-good class is held and back-filled if it arrives late.</li><li>Fix: discarded studies aren't counted, and a signed study no longer jumps into Recent Studies before you've actually signed it.</li></ul>
+        <div class="spot-head"><span class="spot-vnum">v5.1.4</span><span class="spot-title">Clario-first compensation (optional)</span></div>
+        <ul><li>New Settings toggle &quot;Preferably use more accurate Clario data&quot;: when on, Clario's official per-study work unit drives your TBWU totals, compensation, and projections, with RADCounter's own computed value as an automat…</li><li>Recent Studies shows a single self-replacing value in that mode — RADCounter's estimate in blue, replaced in place by Clario's authoritative number in white (yellow for multiplier studies) — with the read duration und…</li><li>Hover any value for a breakdown of RADCounter's number versus Clario's, each with a note on where it comes from.</li><li>Clario Compare: the comparison column is now labeled RADCounter, and each &quot;study types that differ&quot; row shows its percent change next to the delta.</li></ul>
       </div>
       <div class="spot-ver">
-        <div class="spot-head"><span class="spot-vnum">v5.0.21</span><span class="spot-title">Instant Recent Studies &amp; Study Mix</span></div>
-        <ul><li>Recent Studies updates the instant a study is signed instead of waiting for the next scan.</li><li>Studies complete on the sign action itself for more accurate end-of-study timestamps.</li><li>New Study Mix view breaks your shift down by modality and study type.</li></ul>
+        <div class="spot-head"><span class="spot-vnum">v5.1.3</span><span class="spot-title">Window persistence &amp; TBWU fixes</span></div>
+        <ul><li>The main window's position and size are saved and restored again across launches and auto-updates.</li><li>Three TBWU lookup corrections for procedures that were matching the wrong entry (CT chest-angio plus abdomen/pelvis, and US lower-extremity veins limited, left and right).</li><li>Clario Compare gains a four-line compensation breakdown (sign-time plus drafted / undrafted / all), the &quot;types that differ&quot; list split into drafted and not-drafted sections, a &quot;no significant change&quot; summary, an avera…</li></ul>
       </div>
       <div class="spot-ver">
-        <div class="spot-head"><span class="spot-vnum">v5.0.20</span><span class="spot-title">Reconcile fix &amp; current-rate income</span></div>
-        <ul><li>Payroll reconcile no longer creates overlapping or multi-day shifts.</li><li>Month income is projected at your current rate schedule rather than trailing history.</li></ul>
+        <div class="spot-head"><span class="spot-vnum">v5.1.2</span><span class="spot-title">Clario Compare &amp; Draft Impact sorting</span></div>
+        <ul><li>The Clario Compare &quot;study types that differ&quot; list can be sorted by type or by largest per-study difference.</li><li>Clario Compare columns are color-coded — RADCounter's number blue, Clario's white, and the delta green when positive, red when negative.</li><li>The Draft Impact view can be sorted by type or by the study types where drafting saved (or cost) the most time.</li></ul>
       </div>
     </div>
   </section>
@@ -89,7 +89,7 @@
 </section>
 </main>
 <footer class="footer">
-  <div>Documents <strong>RADCounter v5.1.0</strong> · built 2026-07-13</div>
+  <div>Documents <strong>RADCounter v5.1.4</strong> · built 2026-07-15</div>
   <div class="footer-quiet">Internal tooling documentation. No patient data appears anywhere on this site.</div>
 </footer>
 <script>window.__REL = "";</script>
