@@ -47,20 +47,20 @@
 </section>
 
   <section class="module">
-    <h2>✨ New in v5.1.6</h2>
+    <h2>✨ New in v5.1.7</h2>
     <div class="spotlight">
       
       <div class="spot-ver spot-newest">
+        <div class="spot-head"><span class="spot-vnum">v5.1.7</span><span class="spot-title">Signed-study lingering fix &amp; &quot;switched servers&quot; dismiss</span></div>
+        <ul><li>Fixes an intermittent case where a study you signed with no next case auto-opening stayed shown as the current study and didn't move to Recent Studies until the next study opened. A cross-model audit traced it to the …</li><li>End-of-shift &quot;studies not matched to Clario&quot; gains a &quot;Switched servers&quot; button: if you dictated on a different Clario server this shift, one click keeps all those (real) studies and ends the shift.</li></ul>
+      </div>
+      <div class="spot-ver">
         <div class="spot-head"><span class="spot-vnum">v5.1.6</span><span class="spot-title">Clario work units read reliably (no shift selection)</span></div>
         <ul><li>The Clario work-unit reader no longer depends on Clario's Shift dialog being open or scoped to your current shift — it scopes purely by your Clario login plus a time window RadCounter computes itself. As long as you'r…</li><li>When work units still aren't landing, RadCounter now tells you exactly why — not signed in, no studies returned for your login, or studies that don't match yours — instead of a silent green light.</li></ul>
       </div>
       <div class="spot-ver">
         <div class="spot-head"><span class="spot-vnum">v5.1.5</span><span class="spot-title">Shift target, sharpness meter &amp; shift-end reconciliation</span></div>
         <ul><li>Click &quot;est shift total&quot; to set a target (preferred avg/hour or shift total); avg/hour and est-shift-total then color green when on target, red when behind — with an optional glide path showing the &quot;need X/h&quot; you'd nee…</li><li>New sharpness meter: a VU-style display of how fast you're reading versus your own norm for the same study types at the same hour of night, so it isolates real fatigue from a slow list or heavy case mix. Toggle in Set…</li><li>End of shift now reconciles against Clario both ways: studies RC recorded that never matched Clario (remove or keep, per study), and studies signed in Clario that RC missed (add back with Clario's own work unit and ti…</li></ul>
-      </div>
-      <div class="spot-ver">
-        <div class="spot-head"><span class="spot-vnum">v5.1.4</span><span class="spot-title">Clario-first compensation (optional)</span></div>
-        <ul><li>New Settings toggle &quot;Preferably use more accurate Clario data&quot;: when on, Clario's official per-study work unit drives your TBWU totals, compensation, and projections, with RADCounter's own computed value as an automat…</li><li>Recent Studies shows a single self-replacing value in that mode — RADCounter's estimate in blue, replaced in place by Clario's authoritative number in white (yellow for multiplier studies) — with the read duration und…</li><li>Hover any value for a breakdown of RADCounter's number versus Clario's, each with a note on where it comes from.</li></ul>
       </div>
     </div>
   </section>
@@ -89,7 +89,7 @@
 </section>
 </main>
 <footer class="footer">
-  <div>Documents <strong>RADCounter v5.1.6</strong> · built 2026-07-17</div>
+  <div>Documents <strong>RADCounter v5.1.7</strong> · built 2026-07-18</div>
   <div class="footer-quiet">Internal tooling documentation. No patient data appears anywhere on this site.</div>
 </footer>
 <script>window.__REL = "";</script>
