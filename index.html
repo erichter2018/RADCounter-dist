@@ -47,11 +47,11 @@
 </section>
 
   <section class="module">
-    <h2>✨ New in v5.3.0</h2>
+    <h2>✨ New in v5.2.1</h2>
     <div class="spotlight">
       
       <div class="spot-ver spot-newest">
-        <div class="spot-head"><span class="spot-vnum">v5.3.0</span><span class="spot-title">Month-boundary fix, faster refresh &amp; the last four audit segments</span></div>
+        <div class="spot-head"><span class="spot-vnum">v5.2.1</span><span class="spot-title">Month-boundary fix, faster refresh &amp; the last four audit segments</span></div>
         <ul><li>&quot;Est this month&quot; is correct on a shift that crosses into a new month. The pay month is reckoned in Central time, so it doesn't turn over until 1am Eastern — a study signed at 12:30am on the 1st still belongs to the pr…</li><li>The monthly reset no longer fires an hour early. At local midnight it was resetting your projection target and extra hours to defaults, mid-shift, before the Central month had actually turned over.</li><li>Much faster refresh. RadCounter was re-reading all 62,000 records every five seconds to use the 3,700 in the current month, and re-scanning all 4,270 pricing rules for every procedure with no rule — 84,465 such lookup…</li><li>Closing the app can no longer discard the study you just signed while it waits for MosaicTools to confirm it, and studies signed with no shift running now warn before they're lost.</li><li>An update can no longer pair a new version with your old pay rates: pricing files are staged and installed at next launch, and a failure cancels the update instead of reporting success.</li><li>End-of-shift reconciliation no longer offers to delete studies that really are in Clario after an incomplete read followed by a failed one.</li><li>A dollar shift target could paint &quot;est shift total&quot; red while &quot;avg/hour&quot; was green at the same moment; both now use the same rate-aware maths, with an arrow so colour isn't the only cue.</li><li>Settings, Statistics and Tools no longer open off-screen after a monitor is disconnected, and closing Settings with the X no longer keeps a theme you were only previewing.</li></ul>
       </div>
       <div class="spot-ver">
@@ -89,7 +89,7 @@
 </section>
 </main>
 <footer class="footer">
-  <div>Documents <strong>RADCounter v5.3.0</strong> · built 2026-08-01</div>
+  <div>Documents <strong>RADCounter v5.2.1</strong> · built 2026-08-01</div>
   <div class="footer-quiet">Internal tooling documentation. No patient data appears anywhere on this site.</div>
 </footer>
 <script>window.__REL = "";</script>
