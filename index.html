@@ -47,20 +47,20 @@
 </section>
 
   <section class="module">
-    <h2>✨ New in v5.2.1</h2>
+    <h2>✨ New in v5.2.2</h2>
     <div class="spotlight">
       
       <div class="spot-ver spot-newest">
+        <div class="spot-head"><span class="spot-vnum">v5.2.2</span><span class="spot-title">Stroke CTAs paid correctly &amp; the payroll audit stops losing the month boundary</span></div>
+        <ul><li>Code-stroke head/neck CTAs were credited at the plain rate instead of the neuro rate. The pricing table keeps a separate row for the STROKE version of two procedures, and those rows weren't on the multiplier list — so…</li><li>The payroll audit was reading its date range as your local calendar month, but payroll is reckoned in Central time — so the last Central hour of the month (11pm on the 31st, midnight where you are) fell outside the wi…</li><li>The audit report's top comparison had been labelling RVU numbers as TBWU since April, showing a reassuring 5-unit gap while the real work-unit difference was more than twice that and appeared nowhere.</li><li>Worth knowing: the compensation figures are productivity pay and don't include holiday premium, because the app has no concept of one. July's 4th-of-July window paid a flat $14 per work unit on top across 429 studies …</li></ul>
+      </div>
+      <div class="spot-ver">
         <div class="spot-head"><span class="spot-vnum">v5.2.1</span><span class="spot-title">Month-boundary fix, faster refresh &amp; the last four audit segments</span></div>
-        <ul><li>&quot;Est this month&quot; is correct on a shift that crosses into a new month. The pay month is reckoned in Central time, so it doesn't turn over until 1am Eastern — a study signed at 12:30am on the 1st still belongs to the pr…</li><li>The monthly reset no longer fires an hour early. At local midnight it was resetting your projection target and extra hours to defaults, mid-shift, before the Central month had actually turned over.</li><li>Much faster refresh. RadCounter was re-reading all 62,000 records every five seconds to use the 3,700 in the current month, and re-scanning all 4,270 pricing rules for every procedure with no rule — 84,465 such lookup…</li><li>Closing the app can no longer discard the study you just signed while it waits for MosaicTools to confirm it, and studies signed with no shift running now warn before they're lost.</li><li>An update can no longer pair a new version with your old pay rates: pricing files are staged and installed at next launch, and a failure cancels the update instead of reporting success.</li><li>End-of-shift reconciliation no longer offers to delete studies that really are in Clario after an incomplete read followed by a failed one.</li><li>A dollar shift target could paint &quot;est shift total&quot; red while &quot;avg/hour&quot; was green at the same moment; both now use the same rate-aware maths, with an arrow so colour isn't the only cue.</li><li>Settings, Statistics and Tools no longer open off-screen after a monitor is disconnected, and closing Settings with the X no longer keeps a theme you were only previewing.</li></ul>
+        <ul><li>&quot;Est this month&quot; is correct on a shift that crosses into a new month. The pay month is reckoned in Central time, so it doesn't turn over until 1am Eastern — a study signed at 12:30am on the 1st still belongs to the pr…</li><li>The monthly reset no longer fires an hour early. At local midnight it was resetting your projection target and extra hours to defaults, mid-shift, before the Central month had actually turned over.</li><li>Much faster refresh. RadCounter was re-reading all 62,000 records every five seconds to use the 3,700 in the current month, and re-scanning all 4,270 pricing rules for every procedure with no rule — 84,465 such lookup…</li></ul>
       </div>
       <div class="spot-ver">
         <div class="spot-head"><span class="spot-vnum">v5.2.0</span><span class="spot-title">Dollar shift targets, self-repair &amp; a twelve-segment audit</span></div>
         <ul><li>Set your shift target in dollars as well as work units — &quot;$ / hour&quot; or &quot;$ total for shift&quot;. The readout stays in TBWU/hour and the glide path still tells you the work-unit rate you need, because that's what you can ac…</li><li>RadCounter now repairs itself. If its pricing files go missing or are damaged it re-downloads them at startup instead of silently counting every study as zero — the cause behind the occasional &quot;everything shows 0 TBWU…</li><li>It also warns you if you've launched it from inside a zip. Double-clicking the app straight out of a compressed folder extracts only the program and leaves its resources behind, which is exactly how the zero-TBWU prob…</li></ul>
-      </div>
-      <div class="spot-ver">
-        <div class="spot-head"><span class="spot-vnum">v5.1.7</span><span class="spot-title">Signed-study lingering fix &amp; &quot;switched servers&quot; dismiss</span></div>
-        <ul><li>Fixes an intermittent case where a study you signed with no next case auto-opening stayed shown as the current study and didn't move to Recent Studies until the next study opened. A cross-model audit traced it to the …</li><li>End-of-shift &quot;studies not matched to Clario&quot; gains a &quot;Switched servers&quot; button: if you dictated on a different Clario server this shift, one click keeps all those (real) studies and ends the shift.</li></ul>
       </div>
     </div>
   </section>
@@ -89,7 +89,7 @@
 </section>
 </main>
 <footer class="footer">
-  <div>Documents <strong>RADCounter v5.2.1</strong> · built 2026-08-01</div>
+  <div>Documents <strong>RADCounter v5.2.2</strong> · built 2026-08-15</div>
   <div class="footer-quiet">Internal tooling documentation. No patient data appears anywhere on this site.</div>
 </footer>
 <script>window.__REL = "";</script>
