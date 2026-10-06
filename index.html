@@ -47,20 +47,20 @@
 </section>
 
   <section class="module">
-    <h2>✨ New in v5.2.3</h2>
+    <h2>✨ New in v5.2.4</h2>
     <div class="spotlight">
       
       <div class="spot-ver spot-newest">
+        <div class="spot-head"><span class="spot-vnum">v5.2.4</span><span class="spot-title">&quot;This Shift&quot; hourly graph &amp; the slowdown warning finally earns its keep</span></div>
+        <ul><li>New &quot;This Shift&quot; box under the pace car: one bar per hour since your shift started, showing the work units you signed in that hour. Bars scale against your busiest complete hour rather than a fixed ceiling, so the sha…</li><li>The &quot;you may be slowing down&quot; warning can be turned off. Until now the only control was the dismiss box on the banner, which re-armed after 30 minutes — there was no way to stop it.</li><li>And it was mostly crying wolf. Replayed across 137 shifts it fired on 88% of them, six times each on average. Three things all pushed the same way: it measured you against your own FASTEST hour (the first hour average…</li><li>It now prices each study against your own usual time for that study type at that hour, and judges the last half hour by its median instead of its average. Firing drops from 88% of shifts to 54%, and from 6.0 alerts a …</li><li>A study left open over a meal break no longer counts as a slow read. The slowdown detector had no upper limit at all, so one hour-long study could wreck the baseline and raise the warning by itself. Capped at 30 minut…</li><li>The download now carries &quot;run me first.bat&quot;. Windows tags files out of a browser-downloaded zip with a hidden marker, and Windows 11 24H2 no longer offers &quot;Run anyway&quot; on an unsigned program, so the block is a dead en…</li></ul>
+      </div>
+      <div class="spot-ver">
         <div class="spot-head"><span class="spot-vnum">v5.2.3</span><span class="spot-title">The shift estimate learns from your own shifts</span></div>
-        <ul><li>&quot;Est shift total&quot; no longer assumes the rate you've managed so far tonight holds until your scheduled end. It now projects from what your own recent shifts actually did in the hours you have left, weighting recent nig…</li><li>Everything is learned from the database on your own machine, so each reader's estimate reflects their own hours, volume and shift shape. It works from your second shift onward. Day of week is tracked but heavily dampe…</li><li>The pace bar and the shift estimate no longer contradict each other. They ran on two different clocks — the pace bar counted from 11pm, the estimate from whenever RadCounter was launched. On a night started eleven min…</li><li>The night you're compared against stopped getting free time. The pace bar measured you from 11pm but measured the comparison shift from whenever it happened to start. 45 of the last 46 shifts began after 11pm, so the …</li><li>Launching RadCounter a second time now brings back a window Windows has parked off-screen. There was no way back before: no tray icon, no hotkey, and a second launch just said &quot;already running&quot; and quit. A second laun…</li><li>The shift-end backup is finally visible. OneDrive and Dropbox snapshots were being written at every shift end but the only signal was bound to nothing, so a good backup and a failed one looked identical. There's now a…</li><li>Payroll reconciliation stops overwriting RadCounter's own detected sign times. It was replacing every matched row, so all 3,779 July rows ended up identical to the payroll timestamp; it now fills only the rows RadCoun…</li><li>A late start is judged against the shift it could actually work — a 49-minute-late start was being measured against a full nine hours of target. Clario Compare also now reports how many studies carry a Clario time, an…</li></ul>
+        <ul><li>&quot;Est shift total&quot; no longer assumes the rate you've managed so far tonight holds until your scheduled end. It now projects from what your own recent shifts actually did in the hours you have left, weighting recent nig…</li><li>Everything is learned from the database on your own machine, so each reader's estimate reflects their own hours, volume and shift shape. It works from your second shift onward. Day of week is tracked but heavily dampe…</li><li>The pace bar and the shift estimate no longer contradict each other. They ran on two different clocks — the pace bar counted from 11pm, the estimate from whenever RadCounter was launched. On a night started eleven min…</li></ul>
       </div>
       <div class="spot-ver">
         <div class="spot-head"><span class="spot-vnum">v5.2.2</span><span class="spot-title">Stroke CTAs paid correctly &amp; the payroll audit stops losing the month boundary</span></div>
         <ul><li>Code-stroke head/neck CTAs were credited at the plain rate instead of the neuro rate. The pricing table keeps a separate row for the STROKE version of two procedures, and those rows weren't on the multiplier list — so…</li><li>The payroll audit was reading its date range as your local calendar month, but payroll is reckoned in Central time — so the last Central hour of the month (11pm on the 31st, midnight where you are) fell outside the wi…</li><li>The audit report's top comparison had been labelling RVU numbers as TBWU since April, showing a reassuring 5-unit gap while the real work-unit difference was more than twice that and appeared nowhere.</li></ul>
-      </div>
-      <div class="spot-ver">
-        <div class="spot-head"><span class="spot-vnum">v5.2.1</span><span class="spot-title">Month-boundary fix, faster refresh &amp; the last four audit segments</span></div>
-        <ul><li>&quot;Est this month&quot; is correct on a shift that crosses into a new month. The pay month is reckoned in Central time, so it doesn't turn over until 1am Eastern — a study signed at 12:30am on the 1st still belongs to the pr…</li><li>The monthly reset no longer fires an hour early. At local midnight it was resetting your projection target and extra hours to defaults, mid-shift, before the Central month had actually turned over.</li><li>Much faster refresh. RadCounter was re-reading all 62,000 records every five seconds to use the 3,700 in the current month, and re-scanning all 4,270 pricing rules for every procedure with no rule — 84,465 such lookup…</li></ul>
       </div>
     </div>
   </section>
@@ -89,7 +89,7 @@
 </section>
 </main>
 <footer class="footer">
-  <div>Documents <strong>RADCounter v5.2.3</strong> · built 2026-09-14</div>
+  <div>Documents <strong>RADCounter v5.2.4</strong> · built 2026-10-06</div>
   <div class="footer-quiet">Internal tooling documentation. No patient data appears anywhere on this site.</div>
 </footer>
 <script>window.__REL = "";</script>
