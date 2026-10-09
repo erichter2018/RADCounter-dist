@@ -47,20 +47,20 @@
 </section>
 
   <section class="module">
-    <h2>✨ New in v5.2.7</h2>
+    <h2>✨ New in v5.2.8</h2>
     <div class="spotlight">
       
       <div class="spot-ver spot-newest">
+        <div class="spot-head"><span class="spot-vnum">v5.2.8</span><span class="spot-title">Two holes in yesterday's &quot;move me somewhere that works&quot;</span></div>
+        <ul><li>RADCounter could replace itself with an OLDER version. v5.2.7 refused to move into a folder that already held an installation, but it decided that by looking for a database — and &quot;run me first.bat&quot; installs the progra…</li><li>A moved copy could end up unable to start. Windows marks files that come out of a browser-downloaded zip and refuses to run a marked program, and copying a file carries that mark with it — so a copy you had never unbl…</li><li>Both were caught the same afternoon by the MosaicTools side, which had guarded against the first one in its own copy of the idea. The version check behind the fix had a bug of its own worth naming: it read the program…</li></ul>
+      </div>
+      <div class="spot-ver">
         <div class="spot-head"><span class="spot-vnum">v5.2.7</span><span class="spot-title">Updates that install, and an app that knows where it should live</span></div>
-        <ul><li>Updates stopped giving up. A reader sat on 5.2.2 through four releases: every attempt downloaded the whole 76 MB fine, then failed because one leftover folder could not be deleted — and nothing ever cleared it, so eve…</li><li>RADCounter can move itself somewhere that works. Where you unzip it is where it lives, and that is usually the Desktop or Downloads — which here sit inside OneDrive, where those update failures were found. On startup,…</li><li>RADCounter will no longer run from inside a zip. Double-clicking the program inside the downloaded zip makes Windows unpack that one file to a temporary folder and run it there, leaving its pay rules behind. That used…</li><li>Starting fresh brings your history back. On a new PC, or any time RADCounter starts with no history at all, it finds your most recent OneDrive backup and offers to restore it, showing the date and the number of studie…</li><li>&quot;This Shift&quot; bars are coloured by how the hour went. Height already showed how much an hour earned; colour now shows how that compares with your own history for the same hour of the day. Red is among your slowest, you…</li><li>The first hour of a shift now counts as a full hour once it covers 45 minutes, so a shift starting at five past gets a colour like any other. Those part-hours also now count toward your history, which they did not bef…</li><li>Smaller things: the Settings switch is now labelled &quot;This Shift bar graph (work units per hour)&quot;; RADCounter sends its hourly figures and their colours to MosaicTools so the same graph can be drawn inside Clario; and …</li></ul>
+        <ul><li>Updates stopped giving up. A reader sat on 5.2.2 through four releases: every attempt downloaded the whole 76 MB fine, then failed because one leftover folder could not be deleted — and nothing ever cleared it, so eve…</li><li>RADCounter can move itself somewhere that works. Where you unzip it is where it lives, and that is usually the Desktop or Downloads — which here sit inside OneDrive, where those update failures were found. On startup,…</li><li>RADCounter will no longer run from inside a zip. Double-clicking the program inside the downloaded zip makes Windows unpack that one file to a temporary folder and run it there, leaving its pay rules behind. That used…</li></ul>
       </div>
       <div class="spot-ver">
         <div class="spot-head"><span class="spot-vnum">v5.2.6</span><span class="spot-title">Two readouts that disagreed with the numbers beside them</span></div>
         <ul><li>&quot;Est this hour&quot; was dividing by the minutes since the top of the hour instead of since your shift actually started, so the first hour of every shift read low. On a 23:09 start, at 23:56 with 30.0 work units in, avg/ho…</li><li>The &quot;This Shift&quot; bars now match their own numbers. Heights were scaled against the tallest WHOLE hour, leaving out the partial hours at each end — so when the busiest hour was a partial one, which it often is because …</li></ul>
-      </div>
-      <div class="spot-ver">
-        <div class="spot-head"><span class="spot-vnum">v5.2.5</span><span class="spot-title">&quot;This Shift&quot; bars are on the clock</span></div>
-        <ul><li>The hourly bar graph was counting from the moment your shift started rather than from the clock, so on a shift beginning at 23:06 the bar labelled &quot;3am&quot; actually covered 3:06 to 4:06. Everything else on that screen co…</li><li>Bars are clock hours now: &quot;3am&quot; means 3:00 to 4:00 and matches the last-full-hour row exactly. Checked across 2,464 hour-by-hour comparisons on 349 past shifts, every bar agrees.</li><li>You will see two short bars instead of one. The last is the hour in progress, as before; the first is now short whenever you start part-way into an hour, which is usually. Neither is allowed to set the height of the o…</li></ul>
       </div>
     </div>
   </section>
@@ -89,7 +89,7 @@
 </section>
 </main>
 <footer class="footer">
-  <div>Documents <strong>RADCounter v5.2.7</strong> · built 2026-10-09</div>
+  <div>Documents <strong>RADCounter v5.2.8</strong> · built 2026-10-09</div>
   <div class="footer-quiet">Internal tooling documentation. No patient data appears anywhere on this site.</div>
 </footer>
 <script>window.__REL = "";</script>
