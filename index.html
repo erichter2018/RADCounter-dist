@@ -47,20 +47,20 @@
 </section>
 
   <section class="module">
-    <h2>✨ New in v5.2.8</h2>
+    <h2>✨ New in v5.3.0</h2>
     <div class="spotlight">
       
       <div class="spot-ver spot-newest">
+        <div class="spot-head"><span class="spot-vnum">v5.3.0</span><span class="spot-title">Your history follows you, not the folder</span></div>
+        <ul><li>Settings, database and logs now live in one fixed place per person — `%LOCALAPPDATA%\RADCounter` — instead of beside the program. Extract a newer download anywhere you like and your history comes with you. The one-tim…</li><li>It looks across your whole user folder for old copies, not just beside the program you started, and carries across the database holding the most studies together with that folder's settings. Databases are never merged…</li><li>The leftover extracted copies then go to the Recycle Bin, so one working program is left instead of seven and the old icon cannot start an old build on an old database. Nothing is hard-deleted, anything holding more s…</li><li>One Desktop shortcut, pointing at the copy that actually runs. A shortcut you made yourself is re-pointed rather than duplicated.</li><li>Run RADCounter from inside the downloaded zip and it now unpacks itself into a proper folder and starts from there, instead of only refusing.</li><li>Starting with no studies at all offers your most recent OneDrive backup, with the date and study count shown first. A restored period still needs the old settings folder for a payroll reconcile, and the prompt says so.</li><li>OneDrive backup is now on unless you turn it off. It used to be off, so anyone who never opened the Backup tab had no backup at all.</li><li>Windows' download block is cleared from RADCounter's own folder on startup, so a freshly extracted copy starts instead of being silently blocked.</li></ul>
+      </div>
+      <div class="spot-ver">
         <div class="spot-head"><span class="spot-vnum">v5.2.8</span><span class="spot-title">Two holes in yesterday's &quot;move me somewhere that works&quot;</span></div>
         <ul><li>RADCounter could replace itself with an OLDER version. v5.2.7 refused to move into a folder that already held an installation, but it decided that by looking for a database — and &quot;run me first.bat&quot; installs the progra…</li><li>A moved copy could end up unable to start. Windows marks files that come out of a browser-downloaded zip and refuses to run a marked program, and copying a file carries that mark with it — so a copy you had never unbl…</li><li>Both were caught the same afternoon by the MosaicTools side, which had guarded against the first one in its own copy of the idea. The version check behind the fix had a bug of its own worth naming: it read the program…</li></ul>
       </div>
       <div class="spot-ver">
         <div class="spot-head"><span class="spot-vnum">v5.2.7</span><span class="spot-title">Updates that install, and an app that knows where it should live</span></div>
         <ul><li>Updates stopped giving up. A reader sat on 5.2.2 through four releases: every attempt downloaded the whole 76 MB fine, then failed because one leftover folder could not be deleted — and nothing ever cleared it, so eve…</li><li>RADCounter can move itself somewhere that works. Where you unzip it is where it lives, and that is usually the Desktop or Downloads — which here sit inside OneDrive, where those update failures were found. On startup,…</li><li>RADCounter will no longer run from inside a zip. Double-clicking the program inside the downloaded zip makes Windows unpack that one file to a temporary folder and run it there, leaving its pay rules behind. That used…</li></ul>
-      </div>
-      <div class="spot-ver">
-        <div class="spot-head"><span class="spot-vnum">v5.2.6</span><span class="spot-title">Two readouts that disagreed with the numbers beside them</span></div>
-        <ul><li>&quot;Est this hour&quot; was dividing by the minutes since the top of the hour instead of since your shift actually started, so the first hour of every shift read low. On a 23:09 start, at 23:56 with 30.0 work units in, avg/ho…</li><li>The &quot;This Shift&quot; bars now match their own numbers. Heights were scaled against the tallest WHOLE hour, leaving out the partial hours at each end — so when the busiest hour was a partial one, which it often is because …</li></ul>
       </div>
     </div>
   </section>
@@ -89,7 +89,7 @@
 </section>
 </main>
 <footer class="footer">
-  <div>Documents <strong>RADCounter v5.2.8</strong> · built 2026-10-09</div>
+  <div>Documents <strong>RADCounter v5.3.0</strong> · built 2026-10-10</div>
   <div class="footer-quiet">Internal tooling documentation. No patient data appears anywhere on this site.</div>
 </footer>
 <script>window.__REL = "";</script>
